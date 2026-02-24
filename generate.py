@@ -5,7 +5,7 @@ import pytz
 # ================= 配置区域 =================
 # 1. 设置一个已知的"大周"的起始周一日期 (YYYY, M, D)
 # 例如：2024年1月1日是周一，假设那天是大周开始
-BASE_BIG_WEEK_START = datetime(2024, 1, 1) 
+BASE_BIG_WEEK_START = datetime(2026, 2, 16) 
 
 # 2. 日历基本信息
 CALENDAR_NAME = "大小周工作提示"
