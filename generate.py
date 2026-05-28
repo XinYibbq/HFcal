@@ -63,11 +63,11 @@ def create_ics():
             
             if week_type == 'BIG':
                 summary = "【大周】本周六需上班"
-                description = "今天是周一。本周为大周（单休），周六需要正常工作，周日休息。"
+                description = "大周（单休），周六需要正常工作，周日休息。"
                 # 可选：在大周的周六也加一个提醒事件
                 saturday = current_date + timedelta(days=5)
                 event_sat = Event()
-                event_sat.add('summary', "🔴 上班提醒：今天是周六")
+                event_sat.add('summary', "🔴上班")
                 event_sat.add('description', "大周工作日，请按时打卡。")
                 event_sat.add('dtstart', saturday.date())
                 event_sat.add('dtend', (saturday + timedelta(days=1)).date())
